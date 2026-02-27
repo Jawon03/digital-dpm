@@ -29,6 +29,23 @@
                 <button type="submit" class="btn-submit">문의 보내기</button>
             </form>
         </div>
+
+        <div class="comment-section">
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = 'https://jawon03.github.io/digital-dpm/';
+                    this.page.identifier = 'digital-dpm-main';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://digitaldpm.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
     </div>
 
     <div id="question-screen" class="hidden">
