@@ -115,9 +115,11 @@ p { color: var(--sub-text-color); line-height: 1.6; margin-bottom: 30px; }
     right: 0;
     top: 40px;
     text-align: left;
+    pointer-events: auto;
 }
 
-.contact-section:hover .contact-form-container {
+.contact-section:hover .contact-form-container,
+.contact-section.active .contact-form-container {
     display: block;
 }
 

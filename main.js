@@ -88,4 +88,18 @@ function updateThemeIcon(theme) {
     }
 }
 
+// Contact Form Toggle Logic
+function toggleContactForm(event) {
+    event.stopPropagation();
+    const section = document.querySelector('.contact-section');
+    section.classList.toggle('active');
+}
+
+document.addEventListener('click', (e) => {
+    const section = document.querySelector('.contact-section');
+    if (section && !section.contains(e.target)) {
+        section.classList.remove('active');
+    }
+});
+
 document.addEventListener('DOMContentLoaded', initTheme);
