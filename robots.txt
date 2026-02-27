@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jawon03.github.io/digital-dpm/sitemap.xml
